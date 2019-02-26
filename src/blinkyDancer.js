@@ -6,16 +6,15 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype)
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
+// var oldStep = makeBlinkyDancer.step;
 
 makeBlinkyDancer.prototype.step = function (){
   makeDancer.prototype.step.call(this);
-
-  this.$node.toggle();
-  
   var styleSettings = {
    border : '10px solid white'
   };
   this.$node.css(styleSettings);
+  this.$node.toggle();
 }
 
 

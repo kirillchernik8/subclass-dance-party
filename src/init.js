@@ -30,5 +30,12 @@ $(document).ready(function() {
     window.dancers.push(dancer)
     $('body').append(dancer.$node);
   });
+
+  $('.allignAll').on('click', function(event) {
+    window.dancers.forEach(dancer => {
+      dancer.allignDancer();
+    });
+    
+  })
 });
 

@@ -17,16 +17,16 @@
 //     // this.$node.css(styleSettings);
 // }
 
-var makeReichstagDancer = function (top, left, timeBetweenSteps) {
+var makeCatDancer = function (top, left, timeBetweenSteps) {
     makeDancer.call(this, top, left, timeBetweenSteps);
     this.$node.removeClass("dancer")
-    this.$node.addClass("reichstag")
+    this.$node.addClass("Cat")
 }
 
-makeReichstagDancer.prototype = Object.create(makeDancer.prototype);
-makeReichstagDancer.prototype.constructor = makeReichstagDancer;
+makeCatDancer.prototype = Object.create(makeDancer.prototype);
+makeCatDancer.prototype.constructor = makeCatDancer;
 
-makeReichstagDancer.prototype.step = function () {
+makeCatDancer.prototype.step = function () {
     makeDancer.prototype.step.call(this);
     this.$node.toggle();
 }
