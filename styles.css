@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image:url(./libr.jpeg);
+  background-image:url(./space.jpeg);
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -30,11 +30,9 @@ body, a:link, a:visited, a:active{
   0%{
     /* transform: scaleY(400px) */
     transform: rotate(0deg);
-    left: 0px
   }
   50% {
     transform: rotate(90deg);
-    left: 200px
   }
   100%{
   transform: rotate(-90deg);
@@ -46,9 +44,11 @@ body, a:link, a:visited, a:active{
 @-webkit-keyframes grandMaDance {
   0% {
     top: 0px;
+    transform: rotate(30deg)
   }
   50% {
     top: 90px;
+    transform: rotate(-30deg)
   }
   100% {
     top: 30px;
@@ -58,11 +58,10 @@ body, a:link, a:visited, a:active{
 
 .Cat {
   -webkit-animation: danceTechno 2s infinite alternate;
-   width: 100px;
-   height: 100px;
+   width: 160px;
+   height: 160px;
   background-image: url(./kitty.png);
   animation-name: danceTechno;
- 
   position:absolute;
 }
 
@@ -70,6 +69,6 @@ body, a:link, a:visited, a:active{
   width: 130px;
   height: 200px;
   background-image: url(./grandma.gif);
-  animation: grandMaDance 1s;
-  position:absolute;
+  animation: grandMaDance 1s infinite;
+  position: absolute;
 }
