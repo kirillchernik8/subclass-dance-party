@@ -25,3 +25,33 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+@keyframes danceTechno {
+  0% {
+    transform: scale(3)
+  }
+  50% {
+    transform: rotate(90deg);
+    transform: scale(8)
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+.reichstag {
+  width: 190px;
+  height: 180px;
+  background-image: url(./merkel2.png);
+  animation-name: danceTechno;
+  animation-duration: 10s;
+  position:absolute;
+}
+
+.cabbage {
+  width: 150px;
+  height: 200px;
+  background-image: url(./grandma.gif);
+  animation-name: danceTechno;
+  animation-duration: 10s;
+  position:absolute;
+}
